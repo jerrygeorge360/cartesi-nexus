@@ -1,4 +1,5 @@
 import binascii
+import binascii
 
 
 def generate_ether_payload(sender_address, amount, arbitrary_data):
