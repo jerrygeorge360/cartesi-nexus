@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cartesi-nexus"
+version = "0.1.0"
+description = "A Python library for handling blockchain-related operations, particularly focused on the Cartesi ecosystem."
+readme = "README.md"
+authors = [{ name = "Jerry George", email = "jerrygithub360@gmail.com" }]
+requires-python = ">=3.6"
+dependencies = ["eth_abi", "eth_utils"]
+
+[tool.setuptools.packages.find]
+where = ["cartesi_nexus"]
+
+[tool.setuptools]
+exclude-package-data = { "*" = ["tests/*"] }
